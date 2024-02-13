@@ -8,12 +8,12 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 10;
     display: flex;
     justify-content: space-around;
     align-items: end;
-    background: linear-gradient(60deg, #ffe6ff, #ffa5ff);
-    /* background: linear-gradient(50deg, #fcfed2, #faeb86); */
+    /* background: linear-gradient(60deg, #ffe6ff, #ffa5ff); */
+    background: linear-gradient(50deg, #fcfed2, #faeb86);
     height: 80px;
     box-shadow: 0 4px 5px rgba(50, 50, 50, 0.3);
 }
@@ -25,9 +25,9 @@ nav a {
     padding-bottom: 6px;
 }
 
-nav img {
+.img-nav {
     margin-bottom: -22px;
-    margin-left: -87px;
+    margin-left: -4.8vw;
     width: 140px;
     border: 1px solid rgb(97, 97, 97);
 }
@@ -141,17 +141,18 @@ nav img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     max-width: 90vw;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
     margin-top: 20px;
-    padding: 0 10%;
+    padding: 0 15vw;
 }
 
 .imagen {
     cursor: pointer;
-    width: 285px;
-    height: 230px;
+    width: 95%;
+    height: auto;
+    aspect-ratio: 4/3;
     border: 1px solid #000;
     padding: 1px;
 }
@@ -169,24 +170,53 @@ nav img {
     z-index: 1;
 }
 
-.imagen-grande {
+.imagen-grande{
     margin: auto;
     display: block;
     max-width: 80%;
     max-height: 80%;
-    position: absolute;
+    position: fixed;
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.cerrar-imagen {
+.cerrar-imagen{
     position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 35px;
+    top: 120px;
+    right: 80px;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    font-weight: 100;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 90;
+}
+
+.flecha-izq{
+    position: absolute;
+    bottom: 60px;
+    text-align: center;
+    margin-right: 80px;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    font-weight: 100;
     color: #fff;
     cursor: pointer;
+    z-index: 90;
+}
+
+.flecha-der{
+    position: absolute;
+    bottom: 60px;
+    text-align: center;
+    margin-left: 80px;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    font-weight: 100;
+    color: #fff;
+    cursor: pointer;
+    z-index: 90;
 }
 
 #llegar{
@@ -253,3 +283,38 @@ nav img {
     margin-top: 3.6rem;
     font-size: 2.3rem;
 }
+
+    /* Estilos para tablets */
+@media (max-width: 1024px)  {
+        
+    .img-nav {
+        margin-left: -3vw;
+
+    }
+
+  
+      .grid-container {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          max-width: 90vw;
+          gap: 10px;
+          margin-top: 20px;
+          padding: 0 15%;
+      }
+
+  }
+
+
+      /* Estilos para celulares */
+@media screen and (max-width: 768px) {
+    .imagen {
+      aspect-ratio: 1 / 1; 
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+  }
+

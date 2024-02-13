@@ -11,8 +11,8 @@
 </head>
 <body>
     <header>
-        <nav class="cont-nav borde-simple">
-            <img src="./imagenes/imagen-logo2.jpg" alt="imagen logo">
+        <nav class="cont-nav">
+            <img class="img-nav" src="./imagenes/imagen-logo2.jpg" alt="imagen logo">
             <a href="#inicio">Inicio</a>
             <a href="#conocenos">Conocenos</a>
             <a href="#imagenes">Imagenes</a>
@@ -107,6 +107,8 @@
                 <div id="imagen-grande-contenedor" class="imagen-grande-contenedor" onclick="ocultarImagen()">
                     <span class="cerrar-imagen" onclick="ocultarImagen()">X</span>
                     <img id="imagen-grande" class="imagen-grande">
+                    <span class="flecha-izq" onclick="mostrarImagenAnterior()">❮</span>
+                    <span class="flecha-der" onclick="mostrarSiguienteImagen()">❯</span>
                 </div>                                
             </div>
         </section>
@@ -133,7 +135,7 @@
         <div class="contenedor-iconos">
             <a href="https://www.facebook.com/profile.php?id=100004467139140" class="contenedor-iconos" Target="_blank"><i class="bi bi-facebook"></i></a>
             <a href="https://www.instagram.com/hueney.ruca/" class="contenedor-iconos" Target="_blank"><i class="bi bi-instagram"></i></a>
-            <a href="https://wa.me/5492915769286?text=Hola hay disponibilidad? fecha: " class="contenedor-iconos" Target="_blank"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://wa.me/5492915769286?" class="contenedor-iconos" Target="_blank"><i class="bi bi-whatsapp"></i></a>
         </div>
     </footer>
     <script src="./imagen.js"></script>
