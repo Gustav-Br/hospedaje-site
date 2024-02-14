@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 .cont-nav{
@@ -14,26 +15,33 @@ body {
     align-items: end;
     /* background: linear-gradient(60deg, #ffe6ff, #ffa5ff); */
     background: linear-gradient(50deg, #fcfed2, #faeb86);
-    height: 80px;
+    height: 90px;
     box-shadow: 0 4px 5px rgba(50, 50, 50, 0.3);
 }
 
-nav a {
+.nav-a {
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
     padding-bottom: 6px;
+    cursor: pointer;  
 }
 
-.img-nav {
+.nav-a:hover{
+    font-size: 1.4rem;
+    color:rgb(13, 12, 41);
+    background-color: #fdeb78;
+    padding: 0 6px;
+}
+
+.img-nav{
     margin-bottom: -22px;
     margin-left: -4.8vw;
     width: 140px;
     border: 1px solid rgb(97, 97, 97);
 }
 
-#inicio {
-    
+#inicio {   
     background-color: rgb(230, 227, 195);
 }
 
@@ -41,21 +49,24 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 90vh;
+    height: 95vh;
     background-color: rgb(253, 253, 253);
+    margin-bottom: 50px;
 }
 
 .cont-inicio img{
-    height: 70%;
+    height: 62%;
+    margin-top: 120px;
 }
 
 .cont-inicio h1{
-    padding: 0.7rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.5rem;
     font-size: 2.5rem;
 }
 
-.cont-inicio div{
-    text-align: center;
+.sub-inicio{
+    margin-bottom: 80px;
 }
 
 #conocenos{
@@ -227,15 +238,15 @@ nav a {
     width: 100%;
     height: 110px;
     background-color: #070678;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 0.9rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .contenedor-iconos{
-    margin: 0 120px;
-    font-size: 45px;  
+    /* margin: 0 120px; */
+    font-size: 3rem;  
     color: white;
     display: flex;
     flex-grow: 1;
@@ -300,9 +311,13 @@ nav a {
           gap: 10px;
           margin-top: 20px;
           padding: 0 15%;
-      }
+    }
 
-  }
+      .footer{
+        width: 100vw;
+    }
+
+}
 
 
       /* Estilos para celulares */
@@ -313,7 +328,7 @@ nav a {
 
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         
     }
   }
