@@ -6,10 +6,9 @@ function mostrarImagen(src) {
 
     imagenGrande.src = src;
     imagenGrandeContenedor.style.display = "block";
-    
-    var imagenes = document.querySelectorAll('.imagen');
-    currentIndex = Array.from(imagenes).findIndex(img => img.src === src);
 
+    var imagenes = document.querySelectorAll('.imagen');
+    currentIndex = Array.from(imagenes).findIndex(img => img.src === (imagenGrande.src));
 }
 
 function ocultarImagen() {
