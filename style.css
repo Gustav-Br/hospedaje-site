@@ -4,7 +4,7 @@ body {
     width: 100%;
 }
 
-.cont-nav{
+.cont-nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -13,8 +13,8 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: end;
-    /* background: linear-gradient(60deg, #ffe6ff, #ffa5ff); */
-    background: linear-gradient(50deg, #fcfed2, #faeb86);
+    background: linear-gradient(60deg, #ffe6ff, #ffa5ff);
+    /* background: linear-gradient(50deg, #fcfed2, #faeb86); */
     height: 90px;
     box-shadow: 0 4px 5px rgba(50, 50, 50, 0.3);
 }
@@ -24,70 +24,71 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     padding-bottom: 6px;
-    cursor: pointer;  
+    cursor: pointer;
 }
 
-.nav-a:hover{
+.nav-a:hover {
     font-size: 1.4rem;
-    color:rgb(13, 12, 41);
+    color: rgb(13, 12, 41);
     background-color: #fdeb78;
     padding: 0 6px;
 }
 
-.img-nav{
+.img-nav {
     margin-bottom: -22px;
     margin-left: -4.8vw;
     width: 140px;
     border: 1px solid rgb(97, 97, 97);
 }
 
-#inicio {   
+#inicio {
     background-color: rgb(230, 227, 195);
 }
 
-.cont-inicio{
+.cont-inicio {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 95vh;
     background-color: rgb(253, 253, 253);
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
-.cont-inicio img{
+.cont-inicio img {
     height: 62%;
     margin-top: 120px;
 }
 
-.cont-inicio h1{
+.cont-inicio h1 {
     padding-top: 0.7rem;
     padding-bottom: 0.5rem;
     font-size: 2.5rem;
 }
 
-.sub-inicio{
+.sub-inicio {
     margin-bottom: 80px;
 }
 
-#conocenos{
+#conocenos {
     background-color: rgb(170, 209, 125);
-    margin-top: 80px;
-    padding: 60px;
-    height: 140vh;
+    margin-top: 90px;
+    padding: 70px;
+    height: 150vh;
 }
 
-.cont-conoce{
+.cont-conoce {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 90vh;
+    margin-top: 60px;
 }
 
-.cont-conoce img{
+.cont-conoce img {
     width: 60vw;
 }
 
-.cont-conoce h3{
+/* .cont-conoce h3{
     background-color: #fd84c0;
     color: white;
     padding: 0.8rem;
@@ -95,55 +96,64 @@ body {
     position: absolute;
     margin-top: 23rem;
     margin-right:39rem;
-   }
+   } */
 
-.cont-conoce h1{
+.cont-conoce h1 {
     font-family: sans-serif;
     font-weight: 100;
     margin-top: 3.6rem;
     font-size: 3rem;
 }
 
-.parrafos{
+.parrafos {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
     padding: 0 110px;
-}    
-
-.parrafos p{
-    width: 90%;
-    font-size: 1.1rem;
-    text-align: justify;
-    margin: 5px 0 5px 20px;
-    
 }
 
-.servi-titulo{
-    margin: 3rem 0 2.2rem;
+.parrafos p {
+    width: 90%;
+    font-size: 1.3rem;
+    text-align: justify;
+    margin: 5px 0 5px 20px;
+
+}
+
+.servi-titulo {
+    margin: 3rem 0 2rem;
     text-align: center;
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-.servicios{
+/* 
+.servicios {
     text-align: center;
     font-size: 0.9rem;
     line-height: 0.6rem;
+} */
+
+.servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    padding: 0 110px;
+    font-size: 0.9rem;
+    line-height: 0.2rem;
+    text-align: center;
 }
 
-.servi-mascota{
+.servi-mascota {
     margin-top: 1.1rem;
     text-align: center;
     font-size: 0.9rem;
     font-weight: bold;
 }
 
-.gal-imagenes {
+.gal-imagenes {}
 
-}
-
-.gal-imagenes h1{
+.gal-imagenes h1 {
     text-align: center;
     margin: 5rem;
 }
@@ -181,7 +191,7 @@ body {
     z-index: 1;
 }
 
-.imagen-grande{
+.imagen-grande {
     margin: auto;
     display: block;
     max-width: 80%;
@@ -192,7 +202,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.cerrar-imagen{
+.cerrar-imagen {
     position: absolute;
     top: 120px;
     right: 80px;
@@ -204,7 +214,7 @@ body {
     z-index: 90;
 }
 
-.flecha-izq{
+.flecha-izq {
     position: absolute;
     bottom: 60px;
     text-align: center;
@@ -217,7 +227,7 @@ body {
     z-index: 90;
 }
 
-.flecha-der{
+.flecha-der {
     position: absolute;
     bottom: 60px;
     text-align: center;
@@ -230,11 +240,17 @@ body {
     z-index: 90;
 }
 
-#llegar{
-    margin-top: 70px;
+#llegar {
+    margin-top: 160px;
+    margin-bottom: 120px;
 }
 
-.footer{
+.contacto {
+
+    font-size: 1.3rem;
+}
+
+.footer {
     width: 100%;
     height: 110px;
     background-color: #070678;
@@ -244,9 +260,9 @@ body {
     justify-content: space-around;
 }
 
-.contenedor-iconos{
+.contenedor-iconos {
     /* margin: 0 120px; */
-    font-size: 3rem;  
+    font-size: 3rem;
     color: white;
     display: flex;
     flex-grow: 1;
@@ -254,12 +270,12 @@ body {
     align-items: center;
 }
 
-.contenedor-iconos a{
+.contenedor-iconos a {
     /* display: flex;
     justify-content: center; */
 }
 
-#foot-copy{
+#foot-copy {
     min-width: 190px;
     color: white;
     flex-grow: 0;
@@ -267,69 +283,68 @@ body {
     margin-left: 40px;
 }
 
-.llegar{
+.llegar {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 4rem;
 }
 
-.cont-mapa{
+.cont-mapa {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.llegar h1{
+.llegar h1 {
     margin-top: 3.6rem;
     font-size: 2.3rem;
 }
 
-.contacto{
+.contacto {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.contacto h1{
+.contacto h1 {
     margin-top: 3.6rem;
     font-size: 2.3rem;
 }
 
-    /* Estilos para tablets */
-@media (max-width: 1024px)  {
-        
+/* Estilos para tablets */
+@media (max-width: 1024px) {
+
     .img-nav {
         margin-left: -3vw;
 
     }
 
-  
-      .grid-container {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          max-width: 90vw;
-          gap: 10px;
-          margin-top: 20px;
-          padding: 0 15%;
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 90vw;
+        gap: 10px;
+        margin-top: 20px;
+        padding: 0 15%;
     }
 
-      .footer{
+    .footer {
         width: 100vw;
     }
 
 }
 
 
-      /* Estilos para celulares */
+/* Estilos para celulares */
 @media screen and (max-width: 768px) {
     .imagen {
-      aspect-ratio: 1 / 1; 
+        aspect-ratio: 1 / 1;
     }
 
     .grid-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        
-    }
-  }
 
+    }
+}
