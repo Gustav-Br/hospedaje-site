@@ -73,7 +73,7 @@ body {
     background-color: rgb(170, 209, 125);
     margin-top: 90px;
     padding: 70px;
-    height: 150vh;
+    height: 155vh;
 }
 
 .cont-conoce {
@@ -316,9 +316,16 @@ body {
 
     .img-nav {
         margin-left: -3vw;
-
     }
 
+    #conocenos {
+        height: 170vh;
+    }
+
+    .parrafos {
+        column-gap: 25px;
+        padding: 0 90px;
+    }
 
     .grid-container {
         display: grid;
@@ -338,6 +345,24 @@ body {
 
 /* Estilos para celulares */
 @media screen and (max-width: 768px) {
+
+    .cont-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #conocenos {
+        background-color: rgb(170, 209, 125);
+        margin-top: 90px;
+        padding: 70px;
+        height: 155vh;
+    }
+
+    .parrafos {
+        column-gap: 25px;
+        padding: 0 55px;
+    }
+
     .imagen {
         aspect-ratio: 1 / 1;
     }
