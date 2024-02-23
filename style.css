@@ -346,11 +346,6 @@ body {
 /* Estilos para celulares */
 @media screen and (max-width: 768px) {
 
-    .cont-nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
     #conocenos {
         background-color: rgb(170, 209, 125);
         margin-top: 90px;
@@ -372,4 +367,15 @@ body {
         grid-template-columns: repeat(1, 1fr);
 
     }
+}
+
+/* Estilos para celulares  425px */
+@media screen and (max-width: 425px) {
+
+    .cont-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 }
