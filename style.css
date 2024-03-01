@@ -2,21 +2,38 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    background: linear-gradient(45deg, #ade7db, #f3f2da);
 }
 
-.cont-nav {
+.header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 10;
     display: flex;
-    justify-content: space-around;
-    align-items: end;
+    justify-content: space-between;
+    align-items: flex-end;
     background: linear-gradient(60deg, #ffe6ff, #ffa5ff);
     /* background: linear-gradient(50deg, #fcfed2, #faeb86); */
     height: 90px;
     box-shadow: 0 4px 5px rgba(50, 50, 50, 0.3);
+}
+
+.cont-nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+    flex-grow: 1;
+}
+
+.cont-logo {
+    z-index: 20;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    height: 90px;
+    margin: 0 25px;
 }
 
 .nav-a {
@@ -29,29 +46,23 @@ body {
 
 .nav-a:hover {
     font-size: 1.4rem;
-    color: rgb(13, 12, 41);
-    background-color: #fdeb78;
+    color: rgb(23, 21, 97);
+    box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.5);
     padding: 0 6px;
 }
 
 .img-nav {
     margin-bottom: -22px;
-    margin-left: -4.8vw;
     width: 140px;
     border: 1px solid rgb(97, 97, 97);
 }
 
-#inicio {
-    background-color: rgb(230, 227, 195);
-}
 
 .cont-inicio {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 95vh;
-    background-color: rgb(253, 253, 253);
-    /* margin-bottom: 50px; */
 }
 
 .cont-inicio img {
@@ -70,10 +81,9 @@ body {
 }
 
 #conocenos {
-    background-color: rgb(170, 209, 125);
     margin-top: 90px;
     padding: 70px;
-    height: 155vh;
+    height: 165vh;
 }
 
 .cont-conoce {
@@ -138,7 +148,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 50px;
-    padding: 0 110px;
+
     font-size: 0.9rem;
     line-height: 0.2rem;
     text-align: center;
@@ -246,7 +256,6 @@ body {
 }
 
 .contacto {
-
     font-size: 1.3rem;
 }
 
@@ -314,9 +323,9 @@ body {
 /* Estilos para tablets */
 @media (max-width: 1024px) {
 
-    .img-nav {
+    /* .img-nav {
         margin-left: -3vw;
-    }
+    } */
 
     #conocenos {
         height: 170vh;
@@ -339,18 +348,18 @@ body {
     .footer {
         width: 100vw;
     }
-
 }
 
 
 /* Estilos para celulares */
 @media screen and (max-width: 768px) {
 
+    .header {
+        max-width: 100vw;
+    }
+
     #conocenos {
-        background-color: rgb(170, 209, 125);
-        margin-top: 90px;
-        padding: 70px;
-        height: 155vh;
+        height: 165vh;
     }
 
     .parrafos {
@@ -365,17 +374,38 @@ body {
     .grid-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-
     }
+
 }
 
 /* Estilos para celulares  425px */
 @media screen and (max-width: 425px) {
+
+    .cont-logo {
+        margin: 0 20px;
+    }
 
     .cont-nav {
         flex-direction: column;
         align-items: center;
     }
 
+    .cont-inicio img {
+        height: 48%;
+        margin-top: 120px;
+    }
 
+    #conocenos {
+        height: 190vh;
+    }
+
+    .servicios {
+        display: block;
+    }
+
+    .llegar {
+        display: flex;
+        flex-direction: column;
+
+    }
 }
