@@ -20,15 +20,25 @@
                 <img class="img-nav" src="./imagenes/imagen-logo2.jpg" alt="imagen logo">
             </a>
         </div>
-        <button class="menu-toggle" aria-label="Abrir menú">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round" class="icon">
-                <line x1="3" y1="12" x2="21" y2="12" />
-                <line x1="3" y1="6" x2="21" y2="6" />
-                <line x1="3" y1="18" x2="21" y2="18" />
-            </svg>
-        </button>
-        <nav class="cont-nav">
+        <nav class="cont-navbar">
+            <a class="nav-a" href="#inicio">Inicio</a>
+            <a class="nav-a" href="#conocenos">Conocenos</a>
+            <a class="nav-a" href="#imagenes">Imagenes</a>
+            <a class="nav-a" href="#llegar">Como llegar</a>
+            <a class="nav-a" href="#llegar">Contacto</a>
+        </nav>
+        <div class="cont-menu-toggle">
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="icon">
+                    <line x1="3" y1="12" x2="21" y2="12" />
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+            </button>
+        </div>
+        <nav class="cont-nav-mobile">
+            <button class="boton-cerrar" aria-label="Cerrar menú">X</button>
             <a class="nav-a" href="#inicio">Inicio</a>
             <a class="nav-a" href="#conocenos">Conocenos</a>
             <a class="nav-a" href="#imagenes">Imagenes</a>
@@ -41,7 +51,7 @@
             <div class="cont-inicio">
                 <img src="./imagenes/Imagen_HueneyRuca.jpg" alt="imagen portada">
                 <h1>Cabañas Hueney Ruca</h1>
-                <div class="sub-inicio">NATURALEZA - TRANQUILIDAD - EN MEDIO DE LA COMARCA SERRANA</div>
+                <div class="subtitulo-inicio">NATURALEZA - TRANQUILIDAD - EN MEDIO DE LA COMARCA SERRANA</div>
             </div>
         </section>
 
@@ -50,7 +60,7 @@
                 <img src="./imagenes/Cabanas-Hueney-3.jpg" alt="Imagen cabañas">
                 <!-- <h3>CABAÑAS 4/6 PERSONAS</h3> -->
                 <h1>Conocenos!!!</h1>
-                <div class="parrafos">
+                <div class="conoce-descripcion">
                     <p>Somos un complejo de cabañas, ubicadas en el bosque de Villa Arcadia, frente al río Sauce Grande.
                     </p>
                     <p>Contamos con un amplio complejo de 10 cabañas, en medio de la naturaleza, dos piscinas,
@@ -172,8 +182,8 @@
                     <div>email: sierrahueneyruca@gmail.com</div>
                 </div>
                 <div class="cont-mapa">
-                    <h1>Como llegar</h1>
-                    <button>
+
+                    <button class="boton-llegar">
                         <a href="https://www.google.com/maps/dir//Caba%C3%B1as+Hueney+Ruca,+Pasaje+3+241,+B7540XAA+Villa+Arcadia,,
                             +Provincia+de+Buenos+Aires/@-38.1561531,-62.4704381,9z/data=!4m9!4m8!1m0!1m5!1m1!1s0x95eb732a0537f5c9:0xdd6874ef4099f12f!2m2!1d-61.788536!2d-38.1379184!3e0?entry=ttu"
                             target="_blank">como llegar</a></button>
@@ -190,10 +200,10 @@
         <div class="contenedor-iconos">
             <a href="https://www.facebook.com/profile.php?id=100004467139140" class="contenedor-iconos"
                 Target="_blank"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/hueney.ruca/" class="contenedor-iconos" Target="_blank"><i
-                    class="bi bi-instagram"></i></a>
             <a href="https://wa.me/5492915769286" class="contenedor-iconos" Target="_blank"><i
                     class="bi bi-whatsapp"></i></a>
+            <a href="https://www.instagram.com/hueney.ruca/" class="contenedor-iconos" Target="_blank"><i
+                    class="bi bi-instagram"></i></a>
         </div>
     </footer>
     <script src="./imagen.js"></script>

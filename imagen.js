@@ -32,3 +32,25 @@ function mostrarImagenAnterior() {
     currentIndex = (currentIndex - 1 + imagenes.length) % imagenes.length;
     mostrarImagen(imagenes[currentIndex].src);
 }
+
+const menuToggle = document.querySelector('.menu-toggle');
+const botonCerrar = document.querySelector('.boton-cerrar');
+const navLinks = document.querySelector('.cont-nav-mobile');
+const mobileNavLinks = document.querySelectorAll('.cont-nav-mobile a');
+
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+});
+
+botonCerrar.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+});
+
+mobileNavLinks.forEach(function (enlace) {
+    enlace.addEventListener('click', function () {
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+    });
+});

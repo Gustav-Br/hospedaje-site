@@ -25,11 +25,15 @@ body {
     box-shadow: 0 4px 5px rgba(50, 50, 50, 0.3);
 }
 
+.cont-nav-mobile {
+    display: none;
+}
+
 .menu-toggle {
     display: none;
 }
 
-.cont-nav {
+.cont-navbar {
     display: flex;
     justify-content: space-evenly;
     align-items: end;
@@ -66,6 +70,9 @@ body {
     border: 1px solid rgb(97, 97, 97);
 }
 
+
+
+
 .cont-inicio {
     display: flex;
     flex-direction: column;
@@ -82,10 +89,12 @@ body {
 .cont-inicio h1 {
     padding-top: 0.7rem;
     padding-bottom: 0.5rem;
-    font-size: 2.5rem;
+    font-size: 3.2rem;
 }
 
-.sub-inicio {
+.subtitulo-inicio {
+    font-weight: bold;
+    font-size: 1.2rem;
     margin-bottom: 80px;
 }
 
@@ -114,14 +123,14 @@ body {
     font-size: 3rem;
 }
 
-.parrafos {
+.conoce-descripcion {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
     padding: 0 110px;
 }
 
-.parrafos p {
+.conoce-descripcion p {
     width: 90%;
     font-size: 1.3rem;
     text-align: justify;
@@ -269,6 +278,20 @@ body {
     margin-bottom: 4rem;
 }
 
+.boton-llegar {
+    width: 150px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin: 40px;
+}
+
+.boton-llegar:hover {
+    background-color: rgb(212, 196, 238);
+    width: 160px;
+    height: 44px;
+}
+
 .cont-mapa {
     display: flex;
     flex-direction: column;
@@ -329,6 +352,17 @@ body {
 /* Estilos para tablets */
 @media (max-width: 1024px) {
 
+    .cont-inicio h1 {
+        padding-top: 0.7rem;
+        padding-bottom: 0.5rem;
+        font-size: 2.5rem;
+    }
+
+    .subtitulo-inicio {
+        font-weight: bold;
+        margin-bottom: 80px;
+    }
+
     .nav-a {
         object-position: content-box;
         overflow: hidden;
@@ -381,15 +415,47 @@ body {
 }
 
 /* Estilos para celulares  425px */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 650px) {
 
     .cont-logo {
         margin: 0 20px;
     }
 
-    .cont-nav {
+    .menu-toggle {
+        display: block;
+        margin-right: 40px;
+    }
+
+    .cont-navbar {
+        display: none;
+    }
+
+    .menu-toggle.active {
+        display: flex;
+    }
+
+    .cont-nav-mobile.active {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        background: #ffa5ff;
+        width: auto;
+        padding: 15px;
+    }
+
+    .cont-nav-mobile a:hover {
+        font-size: 1.4rem;
+        color: rgb(23, 21, 97);
+        box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.5);
+        padding: 0 6px;
+    }
+
+    .boton-cerrar {
+        align-self: flex-end;
+        margin-bottom: 10px;
     }
 
     .cont-inicio img {
@@ -398,12 +464,24 @@ body {
         margin-top: 120px;
     }
 
-    .nav-a {
-        display: none;
+    .cont-inicio h1 {
+        font-size: 2rem;
+    }
+
+    .subtitulo-inicio {
+        font-size: 0.7rem;
+        text-align: center;
+        margin: 0 40px;
     }
 
     #conocenos {
         height: 190vh;
+    }
+
+    .conoce-descripcion {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0;
     }
 
     .servicios {
@@ -416,7 +494,7 @@ body {
 
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     #llegar {
@@ -432,5 +510,40 @@ body {
     .cont-mapa iframe {
         width: 320px;
         height: 240px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: stretch;
+        height: 140px;
+    }
+
+    .contenedor-iconos {
+        height: 90px;
+        margin-top: 8px;
+        flex-grow: 0;
+    }
+
+    #foot-copy {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .cont-inicio h1 {
+        font-size: 1.6rem;
+    }
+
+    .subtitulo-inicio {
+        font-size: 0.6rem;
+    }
+
+    .menu-toggle {
+        margin-right: 30px;
     }
 }
