@@ -98,7 +98,7 @@ body {
 #conocenos {
     margin-top: 70px;
     padding: 70px;
-    height: 120vh;
+    height: 170vh;
 }
 
 .cont-conoce {
@@ -341,9 +341,9 @@ body {
     margin-left: 40px;
 }
 
-@media (max-width: 1440px) {
+@media (min-width: 2500px) {
     #conocenos {
-        height: 170vh;
+        height: 120vh;
     }
 }
 
