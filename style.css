@@ -151,7 +151,7 @@ body {
 }
 
 .servi-mascota {
-    margin-top: 1.6rem;
+    margin: 1.6rem 0;
     text-align: center;
     font-size: 0.9rem;
     font-weight: bold;
@@ -420,7 +420,7 @@ body {
     }
 
     .cont-inicio {
-        height: 85vh;
+        height: 45vh;
     }
 
     .menu-toggle {
@@ -480,7 +480,7 @@ body {
     #conocenos {
         margin-top: 0;
         padding: 0;
-        height: 160vh;
+        height: 180vh;
     }
 
     .cont-conoce {
@@ -563,6 +563,10 @@ body {
         font-size: 1.6rem;
     }
 
+    .cont-inicio {
+        height: 40vh;
+    }
+
     .subtitulo-inicio {
         font-size: 0.6rem;
     }
@@ -589,6 +593,6 @@ body {
 @media screen and (max-width: 320px) {
 
     #conocenos {
-        height: 170vh;
+        height: 240vh;
     }
 }
