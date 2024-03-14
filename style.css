@@ -365,10 +365,6 @@ body {
         /* width: 680px */
     }
 
-    body {
-        background: #3c3a84;
-    }
-
 }
 
 @media (min-width: 2500px) {
@@ -379,10 +375,6 @@ body {
 
     .cont-inicio img {
         width: 1100px;
-    }
-
-    body {
-        background: #20702d;
     }
 
     /* #conocenos {
