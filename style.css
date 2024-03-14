@@ -2,12 +2,17 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+    /* Tamaño de fuente predeterminado */
+}
+
 body {
     margin: 0;
     padding: 0;
     width: 100%;
     box-sizing: border-box;
-    background: linear-gradient(45deg, #c2f8ed, #fefeec);
+    background: linear-gradient(45deg, #cbfff5, #fdfdf0);
 }
 
 .header {
@@ -19,7 +24,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    background: linear-gradient(60deg, #ffe6ff, #febbfe);
+    background: linear-gradient(60deg, #fceafc, #ffd3ff);
     /* background: linear-gradient(50deg, #fcfed2, #faeb86); */
     height: 90px;
     box-shadow: 0 4px 5px rgba(50, 50, 50, 0.3);
@@ -71,16 +76,26 @@ body {
     /* border: 1px solid rgb(97, 97, 97); */
 }
 
+/* seccion inicio  */
+
+.inicio {
+    display: flex;
+    justify-content: center;
+    max-height: 95vh;
+}
+
 .cont-inicio {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 95vh;
+    max-width: 60vw;
 }
 
 .cont-inicio img {
-    max-height: 62%;
-    max-width: 60vw;
+    /* max-width: 60vw;
+    margin-top: 120px; */
+    aspect-ratio: 1.5 / 1;
+    max-height: 55vh;
     margin-top: 120px;
 }
 
@@ -88,10 +103,12 @@ body {
     font-size: 3.2rem;
 }
 
-.subtitulo-inicio {
+.inicio-subtitulo {
     font-weight: bold;
     font-size: 1.2rem;
     margin-bottom: 80px;
+    max-width: 65vw;
+    text-align: center;
 }
 
 #conocenos {
@@ -340,10 +357,37 @@ body {
     margin-left: 40px;
 }
 
-@media (min-width: 2500px) {
-    #conocenos {
-        height: 120vh;
+@media (min-width: 1440px) {}
+
+@media (min-width: 1050px) {
+
+    .cont-inicio img {
+        /* width: 680px */
     }
+
+    body {
+        background: #3c3a84;
+    }
+
+}
+
+@media (min-width: 2500px) {
+
+    html {
+        font-size: 24px;
+    }
+
+    .cont-inicio img {
+        width: 1100px;
+    }
+
+    body {
+        background: #20702d;
+    }
+
+    /* #conocenos {
+        height: 120vh;
+    } */
 }
 
 
@@ -356,7 +400,7 @@ body {
         font-size: 2.5rem;
     }
 
-    .subtitulo-inicio {
+    .inicio-subtitulo {
         font-weight: bold;
         margin-bottom: 80px;
     }
@@ -415,12 +459,16 @@ body {
 /* Estilos para celulares  425px */
 @media screen and (max-width: 450px) {
 
+    html {
+        font-size: 13px;
+    }
+
     .cont-logo {
         margin: 0 20px;
     }
 
     .cont-inicio {
-        height: 45vh;
+        max-width: 80vw;
     }
 
     .menu-toggle {
@@ -464,17 +512,15 @@ body {
     .cont-inicio img {
         max-width: 80vw;
         height: auto;
-        margin-top: 120px;
     }
 
     .cont-inicio h1 {
         font-size: 2rem;
     }
 
-    .subtitulo-inicio {
+    .inicio-subtitulo {
         font-size: 0.7rem;
         text-align: center;
-        margin: 0 40px;
     }
 
     #conocenos {
@@ -560,15 +606,13 @@ body {
 @media screen and (max-width: 375px) {
 
     .cont-inicio h1 {
-        font-size: 1.6rem;
+        font-size: 1.9rem;
     }
 
-    .cont-inicio {
-        height: 40vh;
-    }
+    .cont-inicio {}
 
-    .subtitulo-inicio {
-        font-size: 0.6rem;
+    .inicio-subtitulo {
+        font-size: 0.8rem;
     }
 
     .menu-toggle {
