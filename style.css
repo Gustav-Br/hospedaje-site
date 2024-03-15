@@ -30,6 +30,12 @@ body {
     box-shadow: 0 4px 5px rgba(50, 50, 50, 0.3);
 }
 
+.main-conteiner {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
 .cont-nav-mobile {
     display: none;
 }
@@ -78,10 +84,26 @@ body {
 
 /* seccion inicio  */
 
+#inicio {
+    background: #7878a4;
+}
+
+#conocenos {
+    background: #5c7b83;
+}
+
+#imagenes {
+    background: #92d1bb;
+}
+
+#conacto {
+    background: #b2dd8d;
+}
+
 .inicio {
     display: flex;
     justify-content: center;
-    max-height: 95vh;
+    /* max-height: 95vh; */
 }
 
 .cont-inicio {
@@ -92,15 +114,15 @@ body {
 }
 
 .cont-inicio img {
-    /* max-width: 60vw;
-    margin-top: 120px; */
+    /* max-width: 60vw; */
     aspect-ratio: 1.5 / 1;
     max-height: 55vh;
-    margin-top: 120px;
+    margin-top: 140px;
 }
 
 .cont-inicio h1 {
     font-size: 3.2rem;
+    margin-bottom: 15px;
 }
 
 .inicio-subtitulo {
@@ -114,22 +136,22 @@ body {
 #conocenos {
     margin-top: 70px;
     padding: 70px;
-    height: 170vh;
+    /* height: auto; */
 }
 
-.cont-conoce {
+.cont-conocenos {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 90vh;
-    margin-top: 60px;
+    height: fit-content;
+    margin-top: 90px;
 }
 
-.cont-conoce img {
+.cont-conocenos img {
     width: 60vw;
 }
 
-.cont-conoce h1 {
+.cont-conocenos h1 {
     font-family: sans-serif;
     font-weight: 100;
     margin-top: 3.6rem;
@@ -402,10 +424,6 @@ body {
         overflow: hidden;
     }
 
-    #conocenos {
-        height: 185vh;
-    }
-
     .parrafos {
         column-gap: 25px;
         padding: 0 90px;
@@ -516,16 +534,16 @@ body {
     }
 
     #conocenos {
-        margin-top: 0;
-        padding: 0;
-        height: 180vh;
+        /* margin-top: 0;
+        padding: 0; */
+
     }
 
-    .cont-conoce {
+    .cont-conocenos {
         margin-top: 60px;
     }
 
-    .cont-conoce img {
+    .cont-conocenos img {
         width: 80vw;
         aspect-ratio: 4 / 2;
     }
@@ -628,7 +646,7 @@ body {
 
 @media screen and (max-width: 320px) {
 
-    #conocenos {
+    /* #conocenos {
         height: 240vh;
-    }
+    } */
 }
