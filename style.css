@@ -84,21 +84,6 @@ body {
 
 /* seccion inicio  */
 
-#inicio {
-    background: #7878a4;
-}
-
-#conocenos {
-    background: #5c7b83;
-}
-
-#imagenes {
-    background: #92d1bb;
-}
-
-#conacto {
-    background: #b2dd8d;
-}
 
 .inicio {
     display: flex;
