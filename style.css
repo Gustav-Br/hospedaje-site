@@ -442,14 +442,10 @@ body {
         max-width: 55vw;
     }
 
-    .conoce-descripcion {
-        padding: 0 30px;
+    .servicios {
+        display: block;
     }
 
-    .parrafos {
-        column-gap: 25px;
-        padding: 0 55px;
-    }
 
     .grid-container {
         display: grid;
@@ -539,7 +535,6 @@ body {
     .conoce-descripcion {
         display: grid;
         grid-template-columns: 1fr;
-        padding: 0;
     }
 
     .servicios {
