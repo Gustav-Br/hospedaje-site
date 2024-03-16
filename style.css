@@ -109,15 +109,15 @@ body {
 .inicio-subtitulo {
     font-weight: bold;
     font-size: 1.2rem;
-    margin-bottom: 80px;
     max-width: 65vw;
     text-align: center;
 }
 
+/* seccion conocenos  */
+
 #conocenos {
-    margin-top: 70px;
-    padding: 70px;
-    /* height: auto; */
+    display: flex;
+    justify-content: center;
 }
 
 .cont-conocenos {
@@ -126,10 +126,12 @@ body {
     align-items: center;
     height: fit-content;
     margin-top: 90px;
+    max-width: 60vw;
 }
 
+
 .cont-conocenos img {
-    width: 60vw;
+    max-width: 50vw;
 }
 
 .cont-conocenos h1 {
@@ -142,8 +144,8 @@ body {
 .conoce-descripcion {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 30px;
-    padding: 0 110px;
+    column-gap: 25px;
+    margin-left: -15px;
 }
 
 .conoce-descripcion p {
@@ -381,10 +383,6 @@ body {
         aspect-ratio: 1.5 / 1;
         margin-top: 170px;
     }
-
-    /* #conocenos {
-        height: 120vh;
-    } */
 }
 
 
@@ -435,8 +433,13 @@ body {
     }
 
     .cont-inicio img {
-        max-width: 65vw;
+        max-width: 55vw;
         height: auto;
+    }
+
+
+    .cont-conocenos img {
+        max-width: 55vw;
     }
 
     .conoce-descripcion {
@@ -522,13 +525,6 @@ body {
 
     .inicio-subtitulo {
         font-size: 0.8rem;
-        margin-bottom: 0;
-    }
-
-    #conocenos {
-        margin-top: 0px;
-        padding: 0;
-
     }
 
     .cont-conocenos {
