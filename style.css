@@ -443,7 +443,7 @@ body {
     }
 
     .servicios {
-        display: block;
+        display: inline;
     }
 
 
@@ -538,7 +538,8 @@ body {
     }
 
     .servicios {
-        display: block;
+        display: contents;
+        width: 65vw;
     }
 
     .imagen {
