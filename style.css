@@ -129,7 +129,6 @@ body {
     max-width: 60vw;
 }
 
-
 .cont-conocenos img {
     max-width: 50vw;
 }
@@ -166,10 +165,14 @@ body {
 .servicios {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
     column-gap: 50px;
-    font-size: 0.9rem;
-    line-height: 0.2rem;
+    font-size: 1.2rem;
     text-align: center;
+}
+
+.servicios p {
+    margin-top: 0.2rem;
 }
 
 .servi-mascota {
@@ -286,7 +289,7 @@ body {
 .cont-contacto {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
 }
 
 .cont-link-contacto a {
@@ -305,9 +308,8 @@ body {
     width: 150px;
     height: 40px;
     border-radius: 6px;
-    font-size: 1.1rem;
-    text-decoration: none !important;
-    margin: 55px 0 45px;
+    font-size: 0.9rem;
+    margin: 55px 0 55px;
 }
 
 .boton-llegar:hover {
@@ -320,7 +322,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 80vw;
 }
 
 .contacto {
@@ -362,9 +363,24 @@ body {
     margin-left: 40px;
 }
 
-@media (max-width: 1440px) {}
+@media (max-width: 1440px) {
+    .servicios {
+        column-gap: 60px;
+        font-size: 1.1rem;
+    }
+
+    .servicios p {
+        margin-top: 0.2rem;
+    }
+
+}
 
 @media (min-width: 1050px) {
+
+    .servicios {
+        column-gap: 50px;
+        font-size: 1rem;
+    }
 
     .cont-inicio img {
         /* width: 680px */
@@ -378,6 +394,15 @@ body {
         font-size: 24px;
     }
 
+    .servicios {
+        column-gap: 60px;
+        font-size: 1.2rem;
+    }
+
+    .servicios p {
+        margin-top: 0.3rem;
+    }
+
     .cont-inicio img {
         width: 1100px;
         aspect-ratio: 1.5 / 1;
@@ -388,6 +413,11 @@ body {
 
 /* Estilos para Laptop */
 @media (max-width: 1024px) {
+
+    .servicios {
+        column-gap: 50px;
+        font-size: 0.9rem;
+    }
 
     .cont-inicio h1 {
         padding-top: 0.7rem;
@@ -404,6 +434,11 @@ body {
     .nav-a {
         object-position: content-box;
         overflow: hidden;
+    }
+
+    .cont-conocenos h1 {
+        margin-top: 3rem;
+        font-size: 2.7rem;
     }
 
     .parrafos {
@@ -443,22 +478,18 @@ body {
     }
 
     .servicios {
-        display: inline;
+        text-align: center;
+        max-width: 70vw;
     }
 
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        max-width: 90vw;
-        gap: 10px;
-        margin-top: 20px;
-        padding: 0 15%;
+    .contacto {
+        font-size: 1.1rem;
     }
 }
 
+
 /* Estilos para celulares  425px */
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 660px) {
 
     html {
         font-size: 14px;
@@ -492,13 +523,18 @@ body {
         position: fixed;
         top: 10px;
         right: 10px;
-        background: #febbfe;
+        background: #d5f2fb;
         width: auto;
         padding: 15px;
+        border: 1px solid rgb(184, 184, 186);
+    }
+
+    .cont-nav-mobile a {
+        font-size: 1.4rem;
     }
 
     .cont-nav-mobile a:hover {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         color: rgb(23, 21, 97);
         box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.5);
         padding: 0 6px;
@@ -532,14 +568,23 @@ body {
         aspect-ratio: 4 / 2;
     }
 
+    .cont-conocenos h1 {
+        margin-top: 2.6rem;
+        font-size: 2rem;
+    }
+
     .conoce-descripcion {
         display: grid;
         grid-template-columns: 1fr;
     }
 
     .servicios {
-        display: contents;
-        width: 65vw;
+        grid-template-columns: 1fr;
+        max-width: 70vw;
+    }
+
+    .servicios p {
+        margin-top: 0.2rem;
     }
 
     .imagen {
@@ -548,7 +593,7 @@ body {
 
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     #contacto {
@@ -592,8 +637,7 @@ body {
     #foot-copy {
         display: flex;
         justify-content: center;
-        margin-top: 20px;
-
+        margin: 20px 0;
     }
 }
 
@@ -603,14 +647,21 @@ body {
         font-size: 1.9rem;
     }
 
-    .cont-inicio {}
-
     .inicio-subtitulo {
         font-size: 0.7rem;
     }
 
+    .cont-conocenos h1 {
+        font-size: 1.9rem;
+    }
+
     .menu-toggle {
         margin-right: 30px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .contacto {
@@ -632,6 +683,11 @@ body {
 
     html {
         font-size: 11px;
+    }
+
+    .cont-mapa iframe {
+        width: 200px;
+        height: 150px;
     }
 
 }
