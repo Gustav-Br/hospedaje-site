@@ -3,7 +3,7 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 20px;
     /* Tamaño de fuente predeterminado */
 }
 
@@ -63,14 +63,14 @@ body {
 
 .nav-a {
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     padding-bottom: 6px;
     cursor: pointer;
 }
 
 .nav-a:hover {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: rgb(23, 21, 97);
     box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.5);
     padding: 0 6px;
@@ -95,20 +95,20 @@ body {
 }
 
 .cont-inicio img {
-    /* max-width: 60vw; */
+    max-width: 60vw;
     aspect-ratio: 1.5 / 1;
     max-height: 55vh;
     margin-top: 140px;
 }
 
 .cont-inicio h1 {
-    font-size: 3.2rem;
+    font-size: 2.9rem;
     margin-bottom: 15px;
 }
 
 .inicio-subtitulo {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     max-width: 65vw;
     text-align: center;
 }
@@ -126,16 +126,19 @@ body {
     align-items: center;
     height: fit-content;
     margin-top: 90px;
-    max-width: 60vw;
+    /* max-width: 60vw; */
 }
 
 .cont-conocenos img {
-    max-width: 50vw;
+    width: 41vw;
+    max-height: 55vh;
+    aspect-ratio: 1.5 / 1;
+
 }
 
 .cont-conocenos h1 {
-    font-family: sans-serif;
-    font-weight: 100;
+    /* font-family: sans-serif; */
+    /* font-weight: 100; */
     margin-top: 3.6rem;
     font-size: 3rem;
 }
@@ -145,11 +148,12 @@ body {
     grid-template-columns: 1fr 1fr;
     column-gap: 25px;
     margin-left: -15px;
+    max-width: 60vw;
 }
 
 .conoce-descripcion p {
-    width: 90%;
-    font-size: 1.3rem;
+    width: 95%;
+    font-size: 1.1rem;
     text-align: justify;
     margin: 5px 0 5px 20px;
 
@@ -166,7 +170,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-    column-gap: 50px;
+    column-gap: 60px;
     font-size: 1.2rem;
     text-align: center;
 }
@@ -182,6 +186,7 @@ body {
     font-weight: bold;
 }
 
+/* seccion imagenes  */
 .gal-imagenes {
     display: flex;
     flex-direction: column;
@@ -228,13 +233,13 @@ body {
 }
 
 .imagen-grande {
+    aspect-ratio: 1.5/1.1;
+    max-width: 80%;
+    max-height: 65%;
     margin: auto;
     display: block;
-    max-width: 80%;
-    max-height: 80%;
     position: fixed;
-    aspect-ratio: 4/3;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -242,7 +247,7 @@ body {
 .cerrar-imagen {
     position: absolute;
     top: 120px;
-    right: 80px;
+    right: 120px;
     font-size: 30px;
     font-family: Arial, sans-serif;
     font-weight: 100;
@@ -253,10 +258,10 @@ body {
 
 .flecha-izq {
     position: absolute;
-    bottom: 60px;
+    bottom: 40px;
     text-align: center;
-    margin-right: 80px;
-    font-size: 30px;
+    margin-left: -50px;
+    font-size: 35px;
     font-family: Arial, sans-serif;
     font-weight: 100;
     color: #fff;
@@ -266,10 +271,10 @@ body {
 
 .flecha-der {
     position: absolute;
-    bottom: 60px;
+    bottom: 40px;
     text-align: center;
-    margin-left: 80px;
-    font-size: 30px;
+    margin-left: 30px;
+    font-size: 35px;
     font-family: Arial, sans-serif;
     font-weight: 100;
     color: #fff;
@@ -283,7 +288,7 @@ body {
 }
 
 .contacto {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .cont-contacto {
@@ -363,19 +368,10 @@ body {
     margin-left: 40px;
 }
 
-@media (max-width: 1440px) {
-    .servicios {
-        column-gap: 60px;
-        font-size: 1.1rem;
-    }
+@media screen and (max-width: 1590px) {}
 
-    .servicios p {
-        margin-top: 0.2rem;
-    }
 
-}
-
-@media (min-width: 1050px) {
+@media screen and (min-width: 1050px) {
 
     .servicios {
         column-gap: 50px;
@@ -388,10 +384,32 @@ body {
 
 }
 
-@media (min-width: 2500px) {
+/* Estilos para 4K */
+@media screen and (min-width: 2500px) {
 
     html {
-        font-size: 24px;
+        font-size: 26px;
+    }
+
+    .cont-inicio img {
+        max-width: 50vw;
+        aspect-ratio: 1.5 / 1;
+        margin-top: 170px;
+    }
+
+    .cont-conocenos {
+        max-width: 45vw;
+    }
+
+    .cont-conocenos img {
+        width: 41vw;
+        max-height: 55vh;
+
+    }
+
+    .conoce-descripcion p {
+        font-size: 1.2rem;
+        margin: 5px 0 10px 20px;
     }
 
     .servicios {
@@ -403,16 +421,41 @@ body {
         margin-top: 0.3rem;
     }
 
-    .cont-inicio img {
-        width: 1100px;
-        aspect-ratio: 1.5 / 1;
-        margin-top: 170px;
+    .imagen-grande {
+        height: 820px;
+        aspect-ratio: 1.5/1.1;
+        margin: auto;
+        display: block;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .flecha-izq {
+        bottom: 80px;
+        font-size: 45px;
+    }
+
+    .flecha-der {
+        bottom: 80px;
+        font-size: 45px;
+    }
+
+    .cerrar-imagen {
+        top: 150px;
+        right: 120px;
+        font-size: 42px;
     }
 }
 
 
 /* Estilos para Laptop */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
+
+    html {
+        font-size: 16px;
+    }
 
     .servicios {
         column-gap: 50px;
@@ -441,9 +484,27 @@ body {
         font-size: 2.7rem;
     }
 
+    .cont-conocenos img {
+        width: 47vw;
+    }
+
     .parrafos {
         column-gap: 25px;
         padding: 0 90px;
+    }
+
+    .cerrar-imagen {
+        top: 110px;
+        right: 80px;
+        font-size: 25px;
+    }
+
+    .flecha-izq {
+        font-size: 30px;
+    }
+
+    .flecha-der {
+        font-size: 30px;
     }
 
     .footer {
@@ -454,6 +515,10 @@ body {
 
 /* Estilos para tablet */
 @media screen and (max-width: 768px) {
+
+    html {
+        font-size: 14px;
+    }
 
     .header {
         max-width: 100vw;
@@ -472,9 +537,12 @@ body {
         height: auto;
     }
 
-
     .cont-conocenos img {
-        max-width: 55vw;
+        width: 55vw;
+    }
+
+    .conoce-descripcion p {
+        margin: 5px 0 5px 13px;
     }
 
     .servicios {
@@ -484,6 +552,11 @@ body {
 
     .contacto {
         font-size: 1.1rem;
+    }
+
+    .cerrar-imagen {
+        top: 100px;
+        right: 40px;
     }
 }
 
@@ -564,8 +637,8 @@ body {
     }
 
     .cont-conocenos img {
-        width: 80vw;
-        aspect-ratio: 4 / 2;
+        width: 70vw;
+        aspect-ratio: 1.5 / 1;
     }
 
     .cont-conocenos h1 {
@@ -577,6 +650,11 @@ body {
         display: grid;
         grid-template-columns: 1fr;
     }
+
+    .conoce-descripcion p {
+        margin: 5px 0 5px 8px;
+    }
+
 
     .servicios {
         grid-template-columns: 1fr;
@@ -621,6 +699,22 @@ body {
         height: 240px;
     }
 
+    .cerrar-imagen {
+        top: 130px;
+        right: 40px;
+    }
+
+    .flecha-izq {
+        font-size: 25px;
+        bottom: 80px;
+    }
+
+    .flecha-der {
+        font-size: 25px;
+        bottom: 80px;
+    }
+
+
     .footer {
         display: flex;
         flex-direction: column-reverse;
@@ -644,7 +738,7 @@ body {
 @media screen and (max-width: 375px) {
 
     .cont-inicio h1 {
-        font-size: 1.9rem;
+        font-size: 1.8rem;
     }
 
     .inicio-subtitulo {
@@ -689,5 +783,19 @@ body {
         width: 200px;
         height: 150px;
     }
+}
 
+@media screen and (max-width: 245px) {
+
+    html {
+        font-size: 10px;
+    }
+
+    .cont-inicio h1 {
+        font-size: 1.6rem;
+    }
+
+    .cont-conocenos h1 {
+        font-size: 1.6rem;
+    }
 }
