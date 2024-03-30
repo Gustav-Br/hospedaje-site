@@ -378,10 +378,6 @@ body {
         font-size: 1rem;
     }
 
-    .cont-inicio img {
-        /* width: 680px */
-    }
-
 }
 
 /* Estilos para 4K */
@@ -565,7 +561,7 @@ body {
 @media screen and (max-width: 660px) {
 
     html {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .imagen-logo {
@@ -797,5 +793,16 @@ body {
 
     .cont-conocenos h1 {
         font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-height: 399px) {
+
+    .cont-inicio h1 {
+        font-size: 2.4rem;
+    }
+
+    .cont-conocenos h1 {
+        font-size: 2.4rem;
     }
 }
