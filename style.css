@@ -387,14 +387,19 @@ body {
         font-size: 26px;
     }
 
+    .header {
+        height: 120px;
+    }
+
     .cont-inicio img {
         max-width: 50vw;
         aspect-ratio: 1.5 / 1;
-        margin-top: 170px;
+        margin-top: 200px;
     }
 
     .cont-conocenos {
         max-width: 45vw;
+        margin-top: 120px;
     }
 
     .cont-conocenos img {
@@ -796,7 +801,7 @@ body {
     }
 }
 
-@media (orientation: landscape) {
+@media screen and (max-height: 590px) and (orientation: landscape) {
 
     .cont-inicio h1,
     .cont-conocenos h1 {
