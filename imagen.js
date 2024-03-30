@@ -54,3 +54,19 @@ mobileNavLinks.forEach(function (enlace) {
         menuToggle.classList.toggle('active');
     });
 });
+
+let scrollAnterior = 0;
+
+window.addEventListener('scroll', function () {
+    const header = document.querySelector('.header');
+    const scrollY = window.scrollY; // Obtener posición de desplazamiento
+
+    console.log(header, scrollY);
+
+    if (scrollY > scrollAnterior && window.matchMedia("(orientation: landscape)").matches) {
+        header.classList.add('minimizado');
+    } else {
+        header.classList.remove('minimizado');
+    }
+    scrollAnterior = scrollY;
+});
